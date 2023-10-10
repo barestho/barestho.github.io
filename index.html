@@ -15,7 +15,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Marco</title>
+	<title>Oboresto</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 	<!--
@@ -30,76 +30,53 @@
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link href="https://cdn.jsdelivr.net/gh/barestho/barestho-widget-integration@main/barestho-widget-style.css"
+	<link href="https://cdn.jsdelivr.net/gh/barestho/barestho-widget-integration@design-v2/style-barestho.css"
 		rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/gh/barestho/barestho-widget-integration@main/barestho-widget-script.js"
+	<script src="https://cdn.jsdelivr.net/gh/barestho/barestho-widget-integration@design-v2/script-barestho.js"
 		defer></script>
 </head>
 
 <body>
 	<div id="barestho-form">
-		<div id="barestho-widget-container" class="default">
-			<iframe id="barestho-widget" src="https://barestho.reservation.barestho.com/?view=widget"
-				frameborder="0"></iframe>
+		<div id="barestho-widget-container" class="modal">
+			<button class="barestho-close-button" onclick="onBaresthoToggle()">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+					stroke="currentColor" class="svg-barestho">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+				</svg>
+			</button>
+			<iframe id="barestho-widget" src="https://barestho.reservation.barestho.com/?view=widget" frameborder="0"></iframe>
 		</div>
-		<button id="barestho-button" class="" onclick="onToggle()">
+		<button id="barestho-button" class="barestho-red" onclick="onBaresthoToggle()">
 			Réserver
 		</button>
 	</div>
-	<header id="header">
+	<!-- <header id="header">
 		<div class="header-top">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div id="logo">
-						<a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
-					</div>
-				</div>
-			</div>
 		</div>
 		<div class="container main-menu">
 			<div class="row align-items-center justify-content-center d-flex">
 				<nav id="nav-menu-container">
-					<ul class="nav-menu">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="menu.html">Menu</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li class="menu-has-children"><a href="">Blog</a>
-							<ul>
-								<li><a href="blog-home.html">Blog Home</a></li>
-								<li><a href="blog-single.html">Blog Single</a></li>
-							</ul>
-						</li>
-						<li class="menu-has-children"><a href="">Pages</a>
-							<ul>
-								<li><a href="elements.html">Elements</a></li>
-								<li class="menu-has-children"><a href="">Level 2 </a>
-									<ul>
-										<li><a href="#">Item One</a></li>
-										<li><a href="#">Item Two</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav><!-- #nav-menu-container -->
+					<a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+				</nav>
 			</div>
 		</div>
-	</header><!-- #header -->
+	</header> -->
 
 	<!-- start banner Area -->
 	<section class="banner-area">
 		<div class="container">
 			<div class="row fullscreen align-items-center justify-content-between">
 				<div class="col-lg-12 banner-content">
-					<h6 class="text-white">Wide Options of Choice</h6>
-					<h1 class="text-white">Delicious Recipes</h1>
+					<h6 class="text-white">Cuisine moléculaire</h6>
+					<h1 class="text-white">O'Boresto</h1>
 					<p class="text-white">
-						inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
-						standards especially in the workplace. That’s why it’s crucial that, as women.
+						Le chef talentueux d'O'Boresto excelle dans l'utilisation de techniques de cuisine moléculaire
+						pour transformer des ingrédients ordinaires en créations culinaires extraordinaires. Les plats
+						sont non seulement délicieux mais aussi visuellement époustouflants, avec des présentations
+						artistiques qui émerveillent les convives.
 					</p>
-					<a href="#" class="primary-btn text-uppercase">Check Our Menu</a>
+					<a href="#" class="primary-btn text-uppercase" onclick="onBaresthoToggle()">Réservez ma table</a>
 				</div>
 			</div>
 		</div>
@@ -111,13 +88,13 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-6 home-about-left">
-					<h1>About Our Story</h1>
+					<h1>Notre histoire</h1>
 					<p>
-						Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur
-						adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-						minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						O'Boresto est un restaurant moléculaire innovant situé dans le cœur de la ville. Ce restaurant
+						offre une expérience gastronomique unique en son genre, combinant la science et l'art de la
+						cuisine pour créer des plats extraordinaires.
 					</p>
-					<a href="#" class="primary-btn">view full menu</a>
+					<a href="#" class="primary-btn">Voir le menu</a>
 				</div>
 				<div class="col-lg-6 home-about-right">
 					<img class="img-fluid" src="img/about-img.jpg" alt="">
@@ -128,7 +105,7 @@
 	<!-- End home-about Area -->
 
 	<!-- Start menu-area Area -->
-	<section class="menu-area section-gap" id="menu">
+	<!-- <section class="menu-area section-gap" id="menu">
 		<div class="container">
 			<div class="row d-flex justify-content-center">
 				<div class="menu-content pb-70 col-lg-8">
@@ -220,7 +197,7 @@
 			</div>
 
 		</div>
-	</section>
+	</section> -->
 	<!-- End menu-area Area -->
 
 	<!-- Start reservation Area -->
@@ -229,36 +206,21 @@
 		<div class="container">
 			<div class="row justify-content-between align-items-center">
 				<div class="col-lg-6 reservation-left">
-					<h1 class="text-white">Reserve Your Seats
-						to Confirm if You Come
-						with Your Family</h1>
+					<h1 class="text-white">Réservez une table pour découvrir une expérience incroyable.</h1>
 					<p class="text-white pt-20">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua. Ut enim ad minim veniam. Quis nostrud exercitation ullamco
-						laboris nisi ut aliquip ex ea.
+						Entrez dans un monde où la gastronomie se marie à la science, où les saveurs sont métamorphosées
+						en expériences sensorielles uniques. Chez Oboresto, chaque plat est une aventure, chaque bouchée
+						une révélation. Notre chef talentueux redéfinit la cuisine avec des techniques moléculaires
+						innovantes, vous invitant à explorer de nouveaux horizons gustatifs. Laissez-vous emporter par
+						cette odyssée culinaire où l'art de la cuisine rencontre la magie de la science. Bienvenue chez
+						Oboresto, où chaque repas est une expérience incroyable.
 					</p>
 				</div>
 				<div class="col-lg-5 reservation-right">
-					<form class="form-wrap text-center" action="#">
-						<input type="text" class="form-control" name="name" placeholder="Your Name"
-							onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'">
-						<input type="email" class="form-control" name="email" placeholder="Your Email Address"
-							onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'">
-						<input type="text" class="form-control" name="phone" placeholder="Phone Number"
-							onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'">
-						<input type="text" class="form-control date-picker" name="date" placeholder="Select Date & time"
-							onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date & time'">
-						<div class="form-select" id="service-select">
-							<select>
-								<option data-display="">Select Event</option>
-								<option value="1">Event One</option>
-								<option value="2">Event Two</option>
-								<option value="3">Event Three</option>
-								<option value="4">Event Four</option>
-							</select>
-						</div>
-						<button class="primary-btn text-uppercase mt-20">Make Reservation</button>
-					</form>
+					<div id="barestho-only-iframe">
+						<iframe id="barestho-widget" src="https://barestho.reservation.barestho.com/?view=widget"
+							frameborder="0"></iframe>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -271,19 +233,19 @@
 			<div class="row d-flex justify-content-center">
 				<div class="menu-content pb-70 col-lg-8">
 					<div class="title text-center">
-						<h1 class="mb-10">Food and Customer Gallery</h1>
-						<p>Who are in extremely love with eco friendly system.</p>
+						<h1 class="mb-10">Nos Plats Étoilés</h1>
+						<p>Une Étoile dans Chaque Assiette</p>
 					</div>
 				</div>
 			</div>
 
 			<ul class="filter-wrap filters col-lg-12 no-padding">
-				<li class="active" data-filter="*">All Menu</li>
-				<li data-filter=".breakfast">Breakfast</li>
-				<li data-filter=".lunch">Lunch</li>
-				<li data-filter=".dinner">Dinner</li>
-				<li data-filter=".budget-meal">Budget Meal</li>
-				<li data-filter=".buffet">Buffet</li>
+				<li class="active" data-filter="*">TOUT</li>
+				<li data-filter=".breakfast">Puissant</li>
+				<li data-filter=".lunch">Incroyable</li>
+				<li data-filter=".dinner">Savoureux</li>
+				<li data-filter=".budget-meal">Authentique</li>
+				<li data-filter=".buffet">Unique</li>
 			</ul>
 
 
@@ -332,8 +294,8 @@
 			<div class="row">
 				<div class="active-review-carusel">
 					<div class="single-review">
-						<img src="img/user.png" alt="">
-						<h4>Hulda Sutton</h4>
+						<img src="img/user.webp" alt="">
+						<h4>Nicolas Junior</h4>
 						<div class="star">
 							<span class="fa fa-star checked"></span>
 							<span class="fa fa-star checked"></span>
@@ -342,14 +304,12 @@
 							<span class="fa fa-star"></span>
 						</div>
 						<p>
-							“Accessories Here you can find the best computer accessory for your laptop, monitor,
-							printer, scanner, speaker. Here you can find the best computer accessory for your laptop,
-							monitor, printer, scanner, speaker.”
+							“J'ai eu le privilège de découvrir la cuisine moléculaire dans ce restaurant, et je dois dire que c'était une expérience gastronomique vraiment incroyable. Chaque plat était une œuvre d'art comestible, alliant la science et la créativité pour créer des saveurs et des textures que je n'avais jamais imaginées auparavant.”
 						</p>
 					</div>
 					<div class="single-review">
-						<img src="img/user.png" alt="">
-						<h4>Hulda Sutton</h4>
+						<img src="img/user.webp" alt="">
+						<h4>Nicolas Junior</h4>
 						<div class="star">
 							<span class="fa fa-star checked"></span>
 							<span class="fa fa-star checked"></span>
@@ -358,14 +318,12 @@
 							<span class="fa fa-star"></span>
 						</div>
 						<p>
-							“Accessories Here you can find the best computer accessory for your laptop, monitor,
-							printer, scanner, speaker. Here you can find the best computer accessory for your laptop,
-							monitor, printer, scanner, speaker.”
+							“J'ai eu le privilège de découvrir la cuisine moléculaire dans ce restaurant, et je dois dire que c'était une expérience gastronomique vraiment incroyable. Chaque plat était une œuvre d'art comestible, alliant la science et la créativité pour créer des saveurs et des textures que je n'avais jamais imaginées auparavant.”
 						</p>
 					</div>
 					<div class="single-review">
-						<img src="img/user.png" alt="">
-						<h4>Hulda Sutton</h4>
+						<img src="img/user.webp" alt="">
+						<h4>Nicolas Junior</h4>
 						<div class="star">
 							<span class="fa fa-star checked"></span>
 							<span class="fa fa-star checked"></span>
@@ -374,14 +332,12 @@
 							<span class="fa fa-star"></span>
 						</div>
 						<p>
-							“Accessories Here you can find the best computer accessory for your laptop, monitor,
-							printer, scanner, speaker. Here you can find the best computer accessory for your laptop,
-							monitor, printer, scanner, speaker.”
+							“J'ai eu le privilège de découvrir la cuisine moléculaire dans ce restaurant, et je dois dire que c'était une expérience gastronomique vraiment incroyable. Chaque plat était une œuvre d'art comestible, alliant la science et la créativité pour créer des saveurs et des textures que je n'avais jamais imaginées auparavant.”
 						</p>
 					</div>
 					<div class="single-review">
-						<img src="img/user.png" alt="">
-						<h4>Hulda Sutton</h4>
+						<img src="img/user.webp" alt="">
+						<h4>Nicolas Junior</h4>
 						<div class="star">
 							<span class="fa fa-star checked"></span>
 							<span class="fa fa-star checked"></span>
@@ -390,11 +346,10 @@
 							<span class="fa fa-star"></span>
 						</div>
 						<p>
-							“Accessories Here you can find the best computer accessory for your laptop, monitor,
-							printer, scanner, speaker. Here you can find the best computer accessory for your laptop,
-							monitor, printer, scanner, speaker.”
+							“J'ai eu le privilège de découvrir la cuisine moléculaire dans ce restaurant, et je dois dire que c'était une expérience gastronomique vraiment incroyable. Chaque plat était une œuvre d'art comestible, alliant la science et la créativité pour créer des saveurs et des textures que je n'avais jamais imaginées auparavant.”
 						</p>
 					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -402,177 +357,29 @@
 	<!-- End review Area -->
 
 	<!-- Start blog Area -->
-	<section class="blog-area section-gap" id="blog">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-70 col-lg-8">
-					<div class="title text-center">
-						<h1 class="mb-10">Latest From Our Blog</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-							labore et dolore magna aliqua.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
-					<div class="thumb">
-						<img class="img-fluid" src="img/b1.jpg" alt="">
-					</div>
-					<p class="date">10 Jan 2018</p>
-					<a href="blog-single.html">
-						<h4>Cooking Perfect Fried Rice
-							in minutes</h4>
-					</a>
-					<p>
-						inappropriate behavior ipsum dolor sit amet, consectetur.
-					</p>
-					<div class="meta-bottom d-flex justify-content-between">
-						<p><span class="lnr lnr-heart"></span> 15 Likes</p>
-						<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
-					<div class="thumb">
-						<img class="img-fluid" src="img/b2.jpg" alt="">
-					</div>
-					<p class="date">10 Jan 2018</p>
-					<a href="blog-single.html">
-						<h4>Secret of making Heart
-							Shaped eggs</h4>
-					</a>
-					<p>
-						inappropriate behavior ipsum dolor sit amet, consectetur.
-					</p>
-					<div class="meta-bottom d-flex justify-content-between">
-						<p><span class="lnr lnr-heart"></span> 15 Likes</p>
-						<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
-					<div class="thumb">
-						<img class="img-fluid" src="img/b3.jpg" alt="">
-					</div>
-					<p class="date">10 Jan 2018</p>
-					<a href="blog-single.html">
-						<h4>How to check steak if
-							it is tender or not</h4>
-					</a>
-					<p>
-						inappropriate behavior ipsum dolor sit amet, consectetur.
-					</p>
-					<div class="meta-bottom d-flex justify-content-between">
-						<p><span class="lnr lnr-heart"></span> 15 Likes</p>
-						<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 single-blog">
-					<div class="thumb">
-						<img class="img-fluid" src="img/b4.jpg" alt="">
-					</div>
-					<p class="date">10 Jan 2018</p>
-					<a href="blog-single.html">
-						<h4>Seaseme and black seed
-							Flavored Bun Rocks</h4>
-					</a>
-					<p>
-						inappropriate behavior ipsum dolor sit amet, consectetur.
-					</p>
-					<div class="meta-bottom d-flex justify-content-between">
-						<p><span class="lnr lnr-heart"></span> 15 Likes</p>
-						<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+
 	<!-- End blog Area -->
 
 	<!-- start footer Area -->
-	<footer class="footer-area">
+	<!-- <footer class="footer-area">
 		<div class="footer-widget-wrap">
 			<div class="container">
 				<div class="row section-gap">
+	
 					<div class="col-lg-4  col-md-6 col-sm-6">
 						<div class="single-footer-widget">
-							<h4>Opening Hours</h4>
-							<ul class="hr-list">
-								<li class="d-flex justify-content-between">
-									<span>Monday - Friday</span> <span>08.00 am - 10.00 pm</span>
-								</li>
-								<li class="d-flex justify-content-between">
-									<span>Saturday</span> <span>08.00 am - 10.00 pm</span>
-								</li>
-								<li class="d-flex justify-content-between">
-									<span>Sunday</span> <span>08.00 am - 10.00 pm</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-4  col-md-6 col-sm-6">
-						<div class="single-footer-widget">
-							<h4>Contact Us</h4>
+							<h4>Contactez-nous</h4>
 							<p>
-								56/8, los angeles, rochy beach, Santa monica, United states of america - 1205
-							</p>
+								contact@barestho.com							</p>
 							<p class="number">
-								012-6532-568-9746 <br>
-								012-6532-569-9748
+								+32 (0)65/47.63.42
 							</p>
 						</div>
 					</div>
-					<div class="col-lg-4  col-md-6 col-sm-6">
-						<div class="single-footer-widget">
-							<h4>Newsletter</h4>
-							<p>You can trust us. we only send promo offers, not a single spam.</p>
-							<div class="d-flex flex-row" id="mc_embed_signup">
-
-
-								<form class="navbar-form"
-									action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-									method="get">
-									<div class="input-group add-on align-items-center d-flex">
-										<input class="form-control" name="EMAIL" placeholder="Your Email address"
-											onfocus="this.placeholder = ''"
-											onblur="this.placeholder = 'Your Email address'" required="" type="email">
-										<div style="position: absolute; left: -5000px;">
-											<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
-												type="text">
-										</div>
-										<div class="input-group-btn">
-											<button class="genric-btn"><span
-													class="lnr lnr-arrow-right"></span></button>
-										</div>
-									</div>
-									<div class="info mt-20"></div>
-								</form>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
-		<div class="footer-bottom-wrap">
-			<div class="container">
-				<div class="row footer-bottom d-flex justify-content-between align-items-center">
-					<p class="col-lg-8 col-mdcol-sm-6 -6 footer-text m-0">
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i
-							class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
-							target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com"
-							target="_blank">ThemeWagon</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					</p>
-					<ul class="col-lg-4 col-mdcol-sm-6 -6 social-icons text-right">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-						<li><a href="#"><i class="fa fa-behance"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
+	</footer> -->
 	<!-- End footer Area -->
 
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
