@@ -30,27 +30,29 @@
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link href="https://cdn.jsdelivr.net/gh/barestho/barestho-widget-integration@design-v2/style-barestho.css"
+	<link href="https://cdn.jsdelivr.net/gh/barestho/barestho-widget-integration@design-v2/style-barestho-v2.css"
 		rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/gh/barestho/barestho-widget-integration@design-v2/script-barestho.js"
+	<script src="https://cdn.jsdelivr.net/gh/barestho/barestho-widget-integration@design-v2/script-barestho-v2.js"
 		defer></script>
 </head>
 
 <body>
-	<div id="barestho-form">
-		<div id="barestho-widget-container" class="modal">
-			<button class="barestho-close-button" onclick="onBaresthoToggle()">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-					stroke="currentColor" class="svg-barestho">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-				</svg>
-			</button>
-			<iframe id="barestho-widget" src="https://barestho.reservation.barestho.com/?view=widget" frameborder="0"></iframe>
-		</div>
-		<button id="barestho-button" class="barestho-red" onclick="onBaresthoToggle()">
-			Réserver
-		</button>
-	</div>
+
+    <div id="barestho-form">
+        <div id="barestho-widget-container">
+            <button class="barestho-close-button" onclick="BaresthoToggleMode('default')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="svg-barestho">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <iframe id="barestho-widget" src="https://barestho.reservation.barestho.com/?view=widget" frameborder="0"></iframe>
+        </div>
+        <button id="barestho-button" class="barestho-red" onclick="BaresthoToggleMode('default')">
+            Réserver
+        </button>
+    </div>
+
 	<!-- <header id="header">
 		<div class="header-top">
 		</div>
@@ -76,7 +78,7 @@
 						sont non seulement délicieux mais aussi visuellement époustouflants, avec des présentations
 						artistiques qui émerveillent les convives.
 					</p>
-					<a href="#" class="primary-btn text-uppercase" onclick="onBaresthoToggle()">Réservez ma table</a>
+					<a href="#" class="primary-btn text-uppercase" onclick="BaresthoToggleMode('modal')">Réservez ma table</a>
 				</div>
 			</div>
 		</div>
