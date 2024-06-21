@@ -1,369 +1,285 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
-<head>
-	<!-- Mobile Specific Meta -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Favicon-->
-	<link rel="shortcut icon" href="img/fav.png">
-	<!-- Author Meta -->
-	<meta name="author" content="colorlib">
-	<!-- Meta Description -->
-	<meta name="description" content="">
-	<!-- Meta Keyword -->
-	<meta name="keywords" content="">
-	<!-- meta character set -->
-	<meta charset="UTF-8">
-	<!-- Site Title -->
-	<title>Oboresto</title>
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content>
+		<!-- Meta Keyword -->
+		<meta name="keywords" content>
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Oboresto</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-	<!--
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
+			rel="stylesheet">
+		<!--
 			CSS
 			============================================= -->
-	<link rel="stylesheet" href="css/linearicons.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/jquery-ui.css">
-	<link rel="stylesheet" href="css/nice-select.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link href="https://cdn.jsdelivr.net/gh/barestho/barestho-widget-integration@design-v2/style-barestho-v2.css"
-		rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/gh/barestho/barestho-widget-integration@design-v2/script-barestho-v2.js"
-		defer></script>
-</head>
+		<link rel="stylesheet" href="css/linearicons.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link href="https://cdn.jsdelivr.net/gh/barestho/barestho-widget-integration@improvement/iframe/widget-style.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/gh/barestho/barestho-widget-integration@improvement/iframe/widget-script.js" defer></script>
+	</head>
 
-<body>
+	<body>
 
-    <div id="barestho-form">
-        <div id="barestho-widget-container">
-            <button class="barestho-close-button" onclick="BaresthoToggleMode('default')">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="svg-barestho">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-            <iframe id="barestho-widget" src="https://barestho.reservation.barestho.com/?view=widget" frameborder="0"></iframe>
-        </div>
-        <button id="barestho-button" class="barestho-red" onclick="BaresthoToggleMode('default')">
-            Réserver
-        </button>
-    </div>
+		<iframe id="barestho-widget-toggle"
+			src="https://barestho.reservationv2.barestotech.ovh:8000/?view=toggle&primary-color=%238B00CC&barestho-logo=%23252332&barestho-alternate=false&secondary-color=%23FFFFFF"
+			frameborder="0"></iframe>
 
-	<!-- <header id="header">
-		<div class="header-top">
-		</div>
-		<div class="container main-menu">
-			<div class="row align-items-center justify-content-center d-flex">
-				<nav id="nav-menu-container">
-					<a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
-				</nav>
+		<!-- start banner Area -->
+
+		<div id="barestho-widget-popup-container" style="display: none;">
+			<div id="barestho-widget-popup">
+				<iframe id="barestho-popup-iframe"
+					src="https://barestho.reservationv2.barestotech.ovh:8000/?view=popupview&primary-color=%238B00CC&barestho-logo=%23252332&barestho-alternate=false&secondary-color=%23FFFFFF"
+					frameborder="0"></iframe>
 			</div>
 		</div>
-	</header> -->
 
-	<!-- start banner Area -->
-	<section class="banner-area">
-		<div class="container">
-			<div class="row fullscreen align-items-center justify-content-between">
-				<div class="col-lg-12 banner-content">
-					<h6 class="text-white">Cuisine moléculaire</h6>
-					<h1 class="text-white">O'Boresto</h1>
-					<p class="text-white">
-						Le chef talentueux d'O'Boresto excelle dans l'utilisation de techniques de cuisine moléculaire
-						pour transformer des ingrédients ordinaires en créations culinaires extraordinaires. Les plats
-						sont non seulement délicieux mais aussi visuellement époustouflants, avec des présentations
-						artistiques qui émerveillent les convives.
-					</p>
-					<a href="#" class="primary-btn text-uppercase" onclick="BaresthoToggleMode('modal')">Réservez ma table</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End banner Area -->
+		
 
-	<!-- Start home-about Area -->
-	<section class="home-about-area section-gap">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-6 home-about-left">
-					<h1>Notre histoire</h1>
-					<p>
-						O'Boresto est un restaurant moléculaire innovant situé dans le cœur de la ville. Ce restaurant
-						offre une expérience gastronomique unique en son genre, combinant la science et l'art de la
-						cuisine pour créer des plats extraordinaires.
-					</p>
-					<a href="#" class="primary-btn">Voir le menu</a>
-				</div>
-				<div class="col-lg-6 home-about-right">
-					<img class="img-fluid" src="img/about-img.jpg" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End home-about Area -->
-
-	<!-- Start menu-area Area -->
-	<!-- <section class="menu-area section-gap" id="menu">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-70 col-lg-8">
-					<div class="title text-center">
-						<h1 class="mb-10">What kind of Foods we serve for you</h1>
-						<p>Who are in extremely love with eco friendly system.</p>
+		<section class="banner-area">
+			<div class="container">
+				<div class="row fullscreen align-items-center justify-content-between">
+					<div class="col-lg-12 banner-content">
+						<h6 class="text-white">Cuisine moléculaire</h6>
+						<h1 class="text-white">O'Boresto</h1>
+						<p class="text-white">
+							Le chef talentueux d'O'Boresto excelle dans l'utilisation de techniques
+							de cuisine moléculaire
+							pour transformer des ingrédients ordinaires en créations culinaires
+							extraordinaires. Les plats
+							sont non seulement délicieux mais aussi visuellement époustouflants, avec
+							des présentations
+							artistiques qui émerveillent les convives.
+						</p>
+						<a href="#" class="primary-btn text-uppercase"
+							onclick="baresthoToggleIframe()">Réservez ma table</a>
 					</div>
 				</div>
 			</div>
+		</section>
+		<!-- End banner Area -->
 
-			<ul class="filter-wrap filters col-lg-12 no-padding">
-				<li class="active" data-filter="*">All Menu</li>
-				<li data-filter=".breakfast">Breakfast</li>
-				<li data-filter=".lunch">Lunch</li>
-				<li data-filter=".dinner">Dinner</li>
-				<li data-filter=".budget-meal">Budget Meal</li>
-				<li data-filter=".buffet">Buffet</li>
-			</ul>
-
-			<div class="filters-content">
-				<div class="row grid">
-					<div class="col-md-6 all breakfast">
-						<div class="single-menu">
-							<div class="title-wrap d-flex justify-content-between">
-								<h4>Cappuccion</h4>
-								<h4 class="price">$49</h4>
-							</div>
-							<p>
-								Usage of the Internet is becoming more common due to rapid advance.
-							</p>
-						</div>
-					</div>
-					<div class="col-md-6 all dinner">
-						<div class="single-menu">
-							<div class="title-wrap d-flex justify-content-between">
-								<h4>Americano</h4>
-								<h4 class="price">$49</h4>
-							</div>
-							<p>
-								Usage of the Internet is becoming more common due to rapid advance.
-							</p>
-						</div>
-					</div>
-					<div class="col-md-6 all budget-meal">
-						<div class="single-menu">
-							<div class="title-wrap d-flex justify-content-between">
-								<h4>Macchiato</h4>
-								<h4 class="price">$49</h4>
-							</div>
-							<p>
-								Usage of the Internet is becoming more common due to rapid advance.
-							</p>
-						</div>
-					</div>
-					<div class="col-md-6 all breakfast">
-						<div class="single-menu">
-							<div class="title-wrap d-flex justify-content-between">
-								<h4>Mocha</h4>
-								<h4 class="price">$49</h4>
-							</div>
-							<p>
-								Usage of the Internet is becoming more common due to rapid advance.
-							</p>
-						</div>
-					</div>
-					<div class="col-md-6 all lunch">
-						<div class="single-menu">
-							<div class="title-wrap d-flex justify-content-between">
-								<h4>Piccolo Latte</h4>
-								<h4 class="price">$49</h4>
-							</div>
-							<p>
-								Usage of the Internet is becoming more common due to rapid advance.
-							</p>
-						</div>
-					</div>
-					<div class="col-md-6 all buffet">
-						<div class="single-menu">
-							<div class="title-wrap d-flex justify-content-between">
-								<h4>Ristretto</h4>
-								<h4 class="price">$49</h4>
-							</div>
-							<p>
-								Usage of the Internet is becoming more common due to rapid advance.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</section> -->
-	<!-- End menu-area Area -->
-
-	<!-- Start reservation Area -->
-	<section class="reservation-area section-gap relative">
-		<div class="overlay overlay-bg"></div>
-		<div class="container">
-			<div class="row justify-content-between align-items-center">
-				<div class="col-lg-6 reservation-left">
-					<h1 class="text-white">Réservez une table pour découvrir une expérience incroyable.</h1>
-					<p class="text-white pt-20">
-						Entrez dans un monde où la gastronomie se marie à la science, où les saveurs sont métamorphosées
-						en expériences sensorielles uniques. Chez Oboresto, chaque plat est une aventure, chaque bouchée
-						une révélation. Notre chef talentueux redéfinit la cuisine avec des techniques moléculaires
-						innovantes, vous invitant à explorer de nouveaux horizons gustatifs. Laissez-vous emporter par
-						cette odyssée culinaire où l'art de la cuisine rencontre la magie de la science. Bienvenue chez
-						Oboresto, où chaque repas est une expérience incroyable.
-					</p>
-				</div>
-				<div class="col-lg-5 reservation-right">
-					<div id="barestho-only-iframe">
-						<iframe id="barestho-widget" src="https://barestho.reservation.barestho.com/?view=widget"
-							frameborder="0"></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End reservation Area -->
-
-	<!-- Start gallery-area Area -->
-	<section class="gallery-area section-gap" id="gallery">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-70 col-lg-8">
-					<div class="title text-center">
-						<h1 class="mb-10">Nos Plats Étoilés</h1>
-						<p>Une Étoile dans Chaque Assiette</p>
-					</div>
-				</div>
-			</div>
-
-			<ul class="filter-wrap filters col-lg-12 no-padding">
-				<li class="active" data-filter="*">TOUT</li>
-				<li data-filter=".breakfast">Puissant</li>
-				<li data-filter=".lunch">Incroyable</li>
-				<li data-filter=".dinner">Savoureux</li>
-				<li data-filter=".budget-meal">Authentique</li>
-				<li data-filter=".buffet">Unique</li>
-			</ul>
-
-
-			<div class="filters-content">
-				<div class="row grid">
-					<div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
-						<div class="single-gallery">
-							<img class="img-fluid" src="img/g1.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 all dinner">
-						<div class="single-gallery">
-							<img class="img-fluid" src="img/g2.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 all budget-meal">
-						<div class="single-gallery">
-							<img class="img-fluid" src="img/g3.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
-						<div class="single-gallery">
-							<img class="img-fluid" src="img/g4.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 all lunch">
-						<div class="single-gallery">
-							<img class="img-fluid" src="img/g5.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 all buffet">
-						<div class="single-gallery">
-							<img class="img-fluid" src="img/g6.jpg" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</section>
-	<!-- End gallery-area Area -->
-
-	<!-- Start review Area -->
-	<section class="review-area section-gap">
-		<div class="container">
-			<div class="row">
-				<div class="active-review-carusel">
-					<div class="single-review">
-						<img src="img/user.webp" alt="">
-						<h4>Nicolas Junior</h4>
-						<div class="star">
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span>
-						</div>
+		<!-- Start home-about Area -->
+		<section class="home-about-area section-gap">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 home-about-left">
+						<h1>Notre histoire</h1>
 						<p>
-							“J'ai eu le privilège de découvrir la cuisine moléculaire dans ce restaurant, et je dois dire que c'était une expérience gastronomique vraiment incroyable. Chaque plat était une œuvre d'art comestible, alliant la science et la créativité pour créer des saveurs et des textures que je n'avais jamais imaginées auparavant.”
+							O'Boresto est un restaurant moléculaire innovant situé dans le cœur de la
+							ville. Ce restaurant
+							offre une expérience gastronomique unique en son genre, combinant la
+							science et l'art de la
+							cuisine pour créer des plats extraordinaires.
+						</p>
+						<a href="#" class="primary-btn">Voir le menu</a>
+					</div>
+					<div class="col-lg-6 home-about-right">
+						<img class="img-fluid" src="img/about-img.jpg" alt>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Start reservation Area -->
+		<section class="reservation-area section-gap relative">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-lg-6 reservation-left">
+						<h1 class="text-white">Réservez une table pour découvrir une expérience
+							incroyable.</h1>
+						<p class="text-white pt-20">
+							Entrez dans un monde où la gastronomie se marie à la science, où les
+							saveurs sont métamorphosées
+							en expériences sensorielles uniques. Chez Oboresto, chaque plat est une
+							aventure, chaque bouchée
+							une révélation. Notre chef talentueux redéfinit la cuisine avec des
+							techniques moléculaires
+							innovantes, vous invitant à explorer de nouveaux horizons gustatifs.
+							Laissez-vous emporter par
+							cette odyssée culinaire où l'art de la cuisine rencontre la magie de la
+							science. Bienvenue chez
+							Oboresto, où chaque repas est une expérience incroyable.
 						</p>
 					</div>
-					<div class="single-review">
-						<img src="img/user.webp" alt="">
-						<h4>Nicolas Junior</h4>
-						<div class="star">
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span>
-						</div>
-						<p>
-							“J'ai eu le privilège de découvrir la cuisine moléculaire dans ce restaurant, et je dois dire que c'était une expérience gastronomique vraiment incroyable. Chaque plat était une œuvre d'art comestible, alliant la science et la créativité pour créer des saveurs et des textures que je n'avais jamais imaginées auparavant.”
-						</p>
+					<div class="col-lg-5 reservation-right">
+						<iframe id="barestho-widget-iframe" src="https://barestho.reservationv2.barestotech.ovh:8000/?view=widget&primary-color=%238B00CC&barestho-logo=%23252332&barestho-alternate=false&secondary-color=%23FFFFFF" frameborder="0"></iframe>
 					</div>
-					<div class="single-review">
-						<img src="img/user.webp" alt="">
-						<h4>Nicolas Junior</h4>
-						<div class="star">
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span>
-						</div>
-						<p>
-							“J'ai eu le privilège de découvrir la cuisine moléculaire dans ce restaurant, et je dois dire que c'était une expérience gastronomique vraiment incroyable. Chaque plat était une œuvre d'art comestible, alliant la science et la créativité pour créer des saveurs et des textures que je n'avais jamais imaginées auparavant.”
-						</p>
-					</div>
-					<div class="single-review">
-						<img src="img/user.webp" alt="">
-						<h4>Nicolas Junior</h4>
-						<div class="star">
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span>
-						</div>
-						<p>
-							“J'ai eu le privilège de découvrir la cuisine moléculaire dans ce restaurant, et je dois dire que c'était une expérience gastronomique vraiment incroyable. Chaque plat était une œuvre d'art comestible, alliant la science et la créativité pour créer des saveurs et des textures que je n'avais jamais imaginées auparavant.”
-						</p>
-					</div>
-					
 				</div>
 			</div>
-		</div>
-	</section>
-	<!-- End review Area -->
+		</section>
+		<!-- End reservation Area -->
 
-	<!-- Start blog Area -->
+		<!-- Start gallery-area Area -->
+		<section class="gallery-area section-gap" id="gallery">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="menu-content pb-70 col-lg-8">
+						<div class="title text-center">
+							<h1 class="mb-10">Nos Plats Étoilés</h1>
+							<p>Une Étoile dans Chaque Assiette</p>
+						</div>
+					</div>
+				</div>
 
-	<!-- End blog Area -->
+				<ul class="filter-wrap filters col-lg-12 no-padding">
+					<li class="active" data-filter="*">TOUT</li>
+					<li data-filter=".breakfast">Puissant</li>
+					<li data-filter=".lunch">Incroyable</li>
+					<li data-filter=".dinner">Savoureux</li>
+					<li data-filter=".budget-meal">Authentique</li>
+					<li data-filter=".buffet">Unique</li>
+				</ul>
 
-	<!-- start footer Area -->
-	<!-- <footer class="footer-area">
+				<div class="filters-content">
+					<div class="row grid">
+						<div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
+							<div class="single-gallery">
+								<img class="img-fluid" src="img/g1.jpg" alt>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 all dinner">
+							<div class="single-gallery">
+								<img class="img-fluid" src="img/g2.jpg" alt>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 all budget-meal">
+							<div class="single-gallery">
+								<img class="img-fluid" src="img/g3.jpg" alt>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
+							<div class="single-gallery">
+								<img class="img-fluid" src="img/g4.jpg" alt>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 all lunch">
+							<div class="single-gallery">
+								<img class="img-fluid" src="img/g5.jpg" alt>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 all buffet">
+							<div class="single-gallery">
+								<img class="img-fluid" src="img/g6.jpg" alt>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- End gallery-area Area -->
+
+		<!-- Start review Area -->
+		<section class="review-area section-gap">
+			<div class="container">
+				<div class="row">
+					<div class="active-review-carusel">
+						<div class="single-review">
+							<img src="img/user.webp" alt>
+							<h4>Nicolas Junior</h4>
+							<div class="star">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<p>
+								“J'ai eu le privilège de découvrir la cuisine moléculaire dans ce
+								restaurant, et je dois dire que c'était une expérience gastronomique
+								vraiment incroyable. Chaque plat était une œuvre d'art comestible,
+								alliant la science et la créativité pour créer des saveurs et des
+								textures que je n'avais jamais imaginées auparavant.”
+							</p>
+						</div>
+						<div class="single-review">
+							<img src="img/user.webp" alt>
+							<h4>Nicolas Junior</h4>
+							<div class="star">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<p>
+								“J'ai eu le privilège de découvrir la cuisine moléculaire dans ce
+								restaurant, et je dois dire que c'était une expérience gastronomique
+								vraiment incroyable. Chaque plat était une œuvre d'art comestible,
+								alliant la science et la créativité pour créer des saveurs et des
+								textures que je n'avais jamais imaginées auparavant.”
+							</p>
+						</div>
+						<div class="single-review">
+							<img src="img/user.webp" alt>
+							<h4>Nicolas Junior</h4>
+							<div class="star">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<p>
+								“J'ai eu le privilège de découvrir la cuisine moléculaire dans ce
+								restaurant, et je dois dire que c'était une expérience gastronomique
+								vraiment incroyable. Chaque plat était une œuvre d'art comestible,
+								alliant la science et la créativité pour créer des saveurs et des
+								textures que je n'avais jamais imaginées auparavant.”
+							</p>
+						</div>
+						<div class="single-review">
+							<img src="img/user.webp" alt>
+							<h4>Nicolas Junior</h4>
+							<div class="star">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<p>
+								“J'ai eu le privilège de découvrir la cuisine moléculaire dans ce
+								restaurant, et je dois dire que c'était une expérience gastronomique
+								vraiment incroyable. Chaque plat était une œuvre d'art comestible,
+								alliant la science et la créativité pour créer des saveurs et des
+								textures que je n'avais jamais imaginées auparavant.”
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End review Area -->
+
+		<!-- Start blog Area -->
+
+		<!-- End blog Area -->
+
+		<!-- start footer Area -->
+		<!-- <footer class="footer-area">
 		<div class="footer-widget-wrap">
 			<div class="container">
 				<div class="row section-gap">
@@ -382,23 +298,24 @@
 			</div>
 		</div>
 	</footer> -->
-	<!-- End footer Area -->
+		<!-- End footer Area -->
 
-	<script src="js/vendor/jquery-2.2.4.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/easing.min.js"></script>
-	<script src="js/hoverIntent.js"></script>
-	<script src="js/superfish.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/jquery.nice-select.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<script src="js/main.js"></script>
-</body>
+		<script src="js/vendor/jquery-2.2.4.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/easing.min.js"></script>
+		<script src="js/hoverIntent.js"></script>
+		<script src="js/superfish.min.js"></script>
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/jquery.nice-select.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/mail-script.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 
 </html>
