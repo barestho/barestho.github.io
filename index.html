@@ -42,6 +42,7 @@
 			src="https://cdn.jsdelivr.net/gh/barestho/barestho-widget-integration@latest/script-barestho.js"
 			defer></script>
 
+
 	</head>
 
 	<body>
@@ -74,7 +75,7 @@
 							artistiques qui émerveillent les convives.
 						</p>
 						<a href="#" class="primary-btn text-uppercase"
-							onclick="baresthoToggleIframe()">Réservez ma table</a>
+							onclick="barestho.openPopup('masu')">Réservez ma table</a>
 					</div>
 				</div>
 			</div>
@@ -129,7 +130,7 @@
 						<iframe
 							id="masu"
 							class="barestho-widget"
-							src="https://test.reservationv2.barestotech.ovh:8000/?view=in-page">
+							src="https://test.reservationv2.barestotech.ovh:8000/?view=in-page&primary-color=%238B00CC&secondary-color=%238B00CC&barestho-logo=%23252332&barestho-alternate=false&text-color=%23FFFFFF">
 						</iframe>
 					</div>
 				</div>
@@ -200,39 +201,35 @@
 		<div
 			class="flex items-center justify-evenly mt-14 pb-20 flex-col xl:flex-row">
 
-			<div id="barestho-widget-popup-container-barestho"
-				class="barestho-widget-popup-container">
-				<iframe id="barestho-popup-iframe-barestho"
-					class="barestho-popup-iframe"
-					src="https://barestho.reservationv2.barestotech.ovh:8000/?view=popup&primary-color=%23F97316&secondary-color=%23F97316&barestho-logo=%23252332&barestho-alternate=false&text-color=%23FFFFFF"
-					frameborder="0"></iframe>
-			</div>
+			<iframe
+				id="barestho"
+				class="barestho-widget"
+				src="https://test.reservationv2.barestotech.ovh:8000/?view=popup&primary-color=%23F97316&secondary-color=%23F97316&barestho-logo=%23252332&barestho-alternate=false&text-color=%23FFFFFF">
+			</iframe>
 
-			<button onclick="baresthoToggleIframe('barestho')"
+			<button onclick="barestho.openPopup('barestho')"
 				class="bg-orange-500  text-white font-bold py-2 px-4 rounded mt-4">
 				Réserver au restaurant Barestho
 			</button>
 
-			<div id="barestho-widget-popup-container-masu"
-				class="barestho-widget-popup-container">
-				<iframe id="barestho-popup-iframe-masu"
-					class="barestho-popup-iframe"
-					src="https://masu.reservationv2.barestotech.ovh:8000/?view=popup&primary-color=%2384CC16&secondary-color=%2384CC16&barestho-logo=%23252332&barestho-alternate=false&text-color=%23FFFFFF"
-					frameborder="0"></iframe>
-			</div>
-			<button onclick="baresthoToggleIframe('masu')"
+			<iframe
+				id="test"
+				class="barestho-widget"
+				src="https://test.reservationv2.barestotech.ovh:8000/?view=popup&primary-color=%2384CC16&secondary-color=%2384CC16&barestho-logo=%23252332&barestho-alternate=false&text-color=%23FFFFFF">
+			</iframe>
+
+			<button onclick="barestho.openPopup('test')"
 				class="bg-lime-500 text-white font-bold py-2 px-4 rounded mt-4">
 				Réserver au restaurant Masu
 			</button>
 
-			<div id="barestho-widget-popup-container-test"
-				class="barestho-widget-popup-container">
-				<iframe id="barestho-popup-iframe-test"
-					class="barestho-popup-iframe"
-					src="https://cocotte.reservationv2.barestotech.ovh:8000/?view=popup&primary-color=%2314B8A6&secondary-color=%2314B8A6&barestho-logo=%23252332&barestho-alternate=false&text-color=%23FFFFFF"
-					frameborder="0"></iframe>
-			</div>
-			<button onclick="baresthoToggleIframe('test')"
+			<iframe
+				id="russopizza"
+				class="barestho-widget"
+				src="https://test.reservationv2.barestotech.ovh:8000/?view=popup&primary-color=%2314B8A6&secondary-color=%2314B8A6&barestho-logo=%23252332&barestho-alternate=false&text-color=%23FFFFFF">
+			</iframe>
+
+			<button onclick="barestho.openPopup('russopizza')"
 				class="bg-teal-500  text-white font-bold py-2 px-4 rounded mt-4">
 				Réserver au restaurant Test
 			</button>
