@@ -1,15 +1,3 @@
-// Notes
-
-/*
-  Widget iframe element must have this id and class name pattern:
-    => <iframe class="barestho-widget [mode]"></iframe>
-  
-  So it can be found with ease, such as this example where we search a widget in popup mode:
-    => <iframe class="barestho-widget popup"></iframe> result of "iframe.barestho-widget.popup".
-*/
-
-// Constants
-
 const BARESTHO_WIDGET_ID = "barestho-widget";
 
 const BARESTHO_BACKGROUND_POPUP_ID = "barestho-popup-background";
@@ -106,5 +94,4 @@ class BaresthoWidgetManager {
 
 var barestho = new BaresthoWidgetManager();
 
-// baresthoMain is executed if DOM is fully loaded.
 document.addEventListener('DOMContentLoaded', barestho.main);
